@@ -1,12 +1,13 @@
 .number-item {
-  padding: 2px 6px;
-  margin: 2px;
-  font-family: monospace;
-  color: black;
+    display: inline-block;
+    padding: 2px 6px;
+    margin: 2px;
+    font-family: monospace;
+    color: black;
 }
 
 @for $i from 1 through 100 {
-  .number-item:nth-child(#{$i}) {
+    .number-item:nth-child(#{$i}) {
     $red: $i;
     $green: 256 - $i;
     $blue: 0;

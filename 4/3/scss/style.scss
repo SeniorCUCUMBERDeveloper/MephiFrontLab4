@@ -5,25 +5,25 @@ $spacing:    20px;
 $border-radius: 8px;
 
 @mixin panel {
-  background: $panel-bg;
-  padding: $spacing;
-  border-radius: $border-radius;
+    background: $panel-bg;
+    padding: $spacing;
+    border-radius: $border-radius;
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: $primary-bg;
-  color: $text-color;
-  margin: 0;
-  padding: $spacing;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: $primary-bg;
+    color: $text-color;
+    margin: 0;
+    padding: $spacing;
 }
 
 .page {
-  max-width: 1000px;
-  margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 auto;
 
   .logo {
-    font-size: 2.5rem;
+    font-size: 2.5rem; 
     font-weight: bold;
     text-align: center;
     margin: 0 0 $spacing 0;
@@ -34,11 +34,11 @@ body {
     margin-bottom: $spacing;
 
     .menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 25px;
-      flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        flex-wrap: wrap;
     }
   }
 
@@ -48,11 +48,11 @@ body {
     margin-bottom: $spacing;
 
     h2 {
-      margin: 0 0 10px 0;
+        margin: 0 0 10px 0;
     }
 
     p {
-      margin: 0;
+        margin: 0;
     }
   }
 
@@ -63,12 +63,12 @@ body {
     margin-bottom: $spacing;
 
     .column {
-      @include panel;
-      text-align: center;
-      min-height: 200px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+        @include panel;
+        text-align: center;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
       h3 {
         margin: 0 0 10px 0;
@@ -85,7 +85,7 @@ body {
     text-align: center;
 
     p {
-      margin: 0;
+        margin: 0;
     }
   }
 }
