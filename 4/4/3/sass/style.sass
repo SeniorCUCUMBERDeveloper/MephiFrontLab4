@@ -1,0 +1,76 @@
+$primary-bg: #f5f5f5
+$panel-bg:   #eaeaea
+$text-color: #222
+$spacing:    20px
+$border-radius: 8px
+
+=panel
+    background: $panel-bg
+    padding: $spacing
+    border-radius: $border-radius
+
+body
+    font-family: 'Segoe UI', Arial, sans-serif
+    background: $primary-bg
+    color: $text-color
+    margin: 0
+    padding: $spacing
+
+.page
+    max-width: 1000px
+    margin: 0 auto
+
+  .logo
+    font-size: 2.5rem
+    font-weight: bold
+    text-align: center
+    margin: 0 0 $spacing 0
+
+  .menu-panel
+    +panel
+    margin-bottom: $spacing
+
+    .menu
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 25px
+        flex-wrap: wrap
+
+  .feature
+    +panel
+    text-align: center
+    margin-bottom: $spacing
+
+    h2
+        margin: 0 0 10px 0
+
+    p
+        margin: 0
+
+  .columns
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    gap: $spacing
+    margin-bottom: $spacing
+
+    .column
+        +panel
+        text-align: center
+        min-height: 200px
+        display: flex
+        flex-direction: column
+        justify-content: center
+
+      h3
+        margin: 0 0 10px 0
+
+      p
+        margin: 0
+
+  .footer
+    +panel
+    text-align: center
+
+    p
+        margin: 0
